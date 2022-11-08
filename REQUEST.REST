@@ -1,0 +1,57 @@
+POST http://localhost:3003/user/singup
+Content-Type: application/json
+
+{
+    "name": "Severo Snape",
+    "email": "Severo_potions@Hoggwarts.com",
+    "password": "HateHarry123",
+    "role": "ADMIN"
+}
+
+###
+
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "Severo_potions@Hoggwarts.com",
+    "password": "HateHarry123"
+}
+
+###
+
+GET http://localhost:3003/user/profile
+Content-Type: application/json
+
+{
+    "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzNWEzZmVkLTcxNGUtNDJiZi1iYmI5LWY2OTJlZTczZjc3NiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1Njk4NTExMSwiZXhwIjoxNjU3MDAzMTExfQ.N1Cgn-X7jzH-v5I3YPDAzyz3u3wrsQgwl7oFdc4QyGQ"
+}
+
+###
+
+GET http://localhost:3003/user/:id
+Content-Type: application/json
+
+{
+    "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzNWEzZmVkLTcxNGUtNDJiZi1iYmI5LWY2OTJlZTczZjc3NiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1Njk4NTExMSwiZXhwIjoxNjU3MDAzMTExfQ.N1Cgn-X7jzH-v5I3YPDAzyz3u3wrsQgwl7oFdc4QyGQ"
+}
+
+###
+
+post http://localhost:3003/recepie/create
+Content-Type: application/json
+
+{
+    "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzNWEzZmVkLTcxNGUtNDJiZi1iYmI5LWY2OTJlZTczZjc3NiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1Njk5MDkxMiwiZXhwIjoxNjU3MDA4OTEyfQ.Rk6C5dVymYwiDtJIlIoH5RWmjr_CMm1MbVd8eUvvv-4",
+    "title": "poção Mata Galinha",
+    "description": "Pega a galinha e mata"
+}
+
+###
+
+GET http://localhost:3003/recepie/:id
+Content-Type: application/json
+
+{
+    "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEzNWEzZmVkLTcxNGUtNDJiZi1iYmI5LWY2OTJlZTczZjc3NiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1Njk4NTExMSwiZXhwIjoxNjU3MDAzMTExfQ.N1Cgn-X7jzH-v5I3YPDAzyz3u3wrsQgwl7oFdc4QyGQ"
+}
